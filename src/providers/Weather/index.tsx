@@ -74,7 +74,7 @@ const WeatherProvider:FC<Props> = ({ children }) => {
             setDayColor(isDayTime ? 'day' : 'night');
             getForecast(city, 0, 0);
             const cities = LocalStorageHelper.getItem('cities') || [];
-            if (cities.length >= 0 && !cities.some((cityLS:string) => cityLS.toLowerCase() === city.toLowerCase())) {
+            if (cities.length >= 0 && !cities.some((cityLS:string) => cityLS.toLowerCase() === weather.name.toLowerCase())) {
                 if (cities.length >= 20) {
                     cities.pop();
                 }
