@@ -1,0 +1,26 @@
+.search-box {
+    padding: 8px 12px;
+    border: 1px solid #777;
+    border-radius: 15px;
+    min-width: 20rem;
+    background: #c6d5ff;
+}
+
+.search-form {
+    display: flex;
+    gap: 5px;
+}
+
+.search-form input {
+    flex: 1;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+.search-form button {
+    font-size: 0.8rem;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
