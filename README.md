@@ -37,4 +37,6 @@ In this project, I used the API key from OpenWeather Map API as an Environmental
 
 API calls are used for getting the weather and forecast data with geolocation(latitude, longitude) for default and city names.
 
+### Varcel
+
 The application is deployed on Vercel.
