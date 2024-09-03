@@ -1,6 +1,7 @@
 /* banner */
 .banner {
     position: relative;
+    min-height: 400px;
 }
   
 .banner-bg {

@@ -36,14 +36,15 @@ const WeatherProvider:FC<Props> = ({ children }) => {
     const [recentCities, setRecentCities] = useState<WeatherData[]>([]);
 
     useEffect(() => {
-        navigator.geolocation.getCurrentPosition(position => {
-            getWeather(position.coords.latitude, position.coords.longitude);
-          });
-
         const recentsLS = LocalStorageHelper.getItem('cities') || [];
         if (recentsLS.length > 0) {
             getWeatherData(recentsLS);
         }
+
+        navigator.geolocation.getCurrentPosition(position => {
+            getWeather(position.coords.latitude, position.coords.longitude);
+        });
+
     }, []);
 
     async function getWeather(lat:number, lon:number) {
